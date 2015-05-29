@@ -26,7 +26,7 @@ module Shrimp
   class Phantom
     include Dir::Tmpname
     
-    attr_accessor :source, :configuration, :outfile, :executable
+    attr_accessor :source, :configuration, :outfile_path, :executable
     attr_reader :options, :cookies, :result, :error
     SCRIPT_FILE = File.expand_path('../rasterize.js', __FILE__)
     
