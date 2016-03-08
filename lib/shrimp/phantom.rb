@@ -66,6 +66,7 @@ module Shrimp
       puts @result
       unless $?.exitstatus == 0
         @error  = @result
+        @result = nil
         raise RenderingError.new(@error) unless options[:fail_silently]
       end
     end
